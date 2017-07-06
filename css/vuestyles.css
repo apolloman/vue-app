@@ -1,0 +1,74 @@
+html, body {
+  font-family: 'Catamaran', sans-serif;
+  height: 100%;
+}
+
+.vue-app, .jquery-app {
+  margin: 50px 0 100px 30px;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),
+     0 1px 10px 0 rgba(0,0,0,.12),
+      0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+.vue-app h1, .jquery-app h2 {
+  font-weight: 100;
+  color: #4fc08d;
+}
+
+#app input:first-child {
+  border: 1px solid #4fc08d;
+  padding: 20px 10px;
+}
+
+.btn-1 {
+  padding: 10px 25px;
+  color: #fff;
+  background: #4fc08d;
+  border: 1px solid #4fc08d;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  outline: none;
+}
+
+::placeholder {
+  font-weight: 100;
+}
+
+#app .footer input {
+  border: 1px solid #4fc08d;
+  padding: 5px 10px;
+  outline: none;
+  color: #999;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+
+
+.removed {
+    color: gray;
+}
+.removed label {
+   text-decoration: line-through;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.footer {
+  font-size: 0.7em;
+  margin-top: 20vh;
+}
+
+
+
+
+
+
+
+
+

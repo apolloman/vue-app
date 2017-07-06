@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Silk Bird Web Studio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/vuestyles.css">
+  <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+  <!-- IE Support -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+  </head>
+  <body>
+  
+  <div class="container vue-app">
+ <span>vue.js todo app</span>
+ 
+    <div id="app">
+    <h1>{{title}}</h1>
+    <div class="input-group">
+       <input v-model="newItem" @keyup.enter="addItem" placeholder="Add shoping list item" type="text" class="form-control">  
+       <span class="input-group-btn">
+         <button @click="addItem" class="btn-1 btn" type="button">Add!</button>
+       </span>
+    </div>
+
+    <ul>
+      <li v-for="item in items" v-bind:class="{'removed':item.checked }">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" v-model="item.checked"> {{item.text}}
+          </label>
+        </div>
+      </li>
+    </ul>
+
+    <div class="footer">
+      <hr/>
+      <em>Change the title of your shopping list here</em>
+      <input v-model="title" />
+    </div>
+  </div>
+  </div> 
+                
+
+                      <hr />
+
+
+
+
+  <div class="container jquery-app">
+  <span>jQuery todo app</span>
+    <h2>jQuery ToDo app</h2>
+    <div class="input-group">
+      <input placeholder="add shopping list item" type="text" class="js-new-item form-control">
+      <span class="input-group-btn">
+        <button @click="addItem" class="js-add btn btn-default" type="button">Add!</button>
+      </span>
+    </div>
+    <ul>
+      <li>
+        <div class="checkbox">
+          <label>
+            <input class="js-item" name="list" type="checkbox"> Carrot
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox">
+          <label>
+            <input class="js-item" name="list" type="checkbox"> Book
+          </label>
+        </div>
+      </li>
+      <li class="removed">
+        <div class="checkbox">
+          <label>
+            <input class="js-item" name="list" type="checkbox" checked> Gift for aunt's birthday
+          </label>
+        </div>
+      </li>
+    </ul>
+    <div class="footer">
+      <hr/>
+      <em>Change the title of your shopping list here</em>
+      <input class="js-change-title" type="text" value="My Shopping List">
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/af.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js">
+   </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/jqueryapp.js"></script>
+  </body>
+  </html>
